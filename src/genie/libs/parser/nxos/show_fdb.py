@@ -85,7 +85,7 @@ class ShowMacAddressTableBase(ShowMacAddressTableBaseSchema):
         # +  390     000f.53ff.1f1d   dynamic  0         F      F    Po125
         p1 = re.compile(r'^(?P<entry>[\w\*\+] )?\s*(?P<vlan>All|[\d\-]+) '
             '+(?P<mac_address>[0-9a-z\.\:]+) +(?P<mac_type>[a-z]+) '
-            '+(?P<age>[0-9\-\~]+) '
+            '+(?P<age>[NA0-9\-\~]+) '
             '+(?P<secure>[A-Z]+) +(?P<ntfy>[A-Z]+) '
             '+(?P<drop>(drop|Drop))?'
             '(?P<ports>[a-zA-Z0-9\/\.\(\)\-\s]+)?$')
